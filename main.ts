@@ -74,7 +74,7 @@ async function getMemoAndSendTransactions(message: string, amountInEther: string
 // Get from form and send:
 
 const messageObjectOffRamp = {
-    pixkey: "",  // <--- pixkey field
+    key: "",  // <--- key field
     msg: "" // <--- MSG Field
 }
 

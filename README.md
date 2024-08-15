@@ -1,6 +1,6 @@
 # Token Transaction with Memo
 
-This project is designed to teach how to send additional data (MEMO) along with a USDT (Tether) token transaction on the Polygon network. The additional data can include various types of information such as a Pix key, and an optional message.
+This project is designed to teach how to send additional data (MEMO) along with a USDT (Tether) token transaction on the Polygon network. The additional data can include various types of information such as a key, and an optional message.
 
 ## Overview
 
@@ -9,7 +9,7 @@ The script utilizes the `ethers.js` library to interact with the Polygon blockch
 ## Features
 
 - **Send USDT Transactions**: Execute token transfers with additional memo data.
-- **Custom Memo Data**: Include Pix key, and an optional message.
+- **Custom Memo Data**: Include key, and an optional message.
 - **Dynamic Gas Price Calculation**: Fetches current gas prices and adjusts for faster transaction speeds.
 
 ## Requirements
@@ -58,7 +58,7 @@ Edit the `messageObjectOffRamp` and `amount` variables in the script to specify 
 
     ```javascript
         const messageObjectOffRamp = {
-            pixkey: "<your-pix-key>",
+            key: "<your--key>",
             msg: "<optional-message>"
         };
 
@@ -72,7 +72,7 @@ Edit the `messageObjectOffRamp` and `amount` variables in the script to specify 
 
 ## Memo Data Format
 
-- **Pix Key**: A random key provided by the bank. Example: `6602ede6-b1a9-4e63-9178-c6883fd0095e`
+- **Key**: A random key provided by the bank. Example: `6602ede6-b1a9-4e63-9178-c6883fd0095e`
  **Phone Number**: International format with country code, city code, and 9 digits. Example: `+5548996005588`
  **CPF**: 11 digits without spaces or special characters. Example: `80042387413`
  **CNPJ**: 14 digits without spaces or special characters. Example: `59456277000176`
@@ -81,7 +81,7 @@ Edit the `messageObjectOffRamp` and `amount` variables in the script to specify 
 
 ## Notes
 
-- The Pix key should be sent as a string, preferable a random key to protect privacy.
+- The  key should be sent as a string, preferable a random key to protect privacy.
 - The optional MSG parameter can be used to add a label to your transaction for easier monitoring on the blockchain.
 
 ## License
